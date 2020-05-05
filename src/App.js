@@ -6,6 +6,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 import CustomToast from './components/CustomToast'
+import CustomModal from './components/CustomModal';
 
 toast.configure()
 
@@ -29,13 +30,16 @@ function App() {
   }
 
   return (
-    <IconContext.Provider value={{color: 'blue', size: '5rem'}} >
-      <div className="App">
+    <div className="App">
+      <IconContext.Provider value={{color: 'blue', size: '5rem'}} >
         <FaReact />
         <MdAlarm color='red' />
-        <button onClick={ notify }>Notify !</button>
-      </div>
-    </IconContext.Provider>
+      </IconContext.Provider>
+
+      <button onClick={ notify }>Notify !</button>
+
+      <CustomModal />
+    </div>
   );
 }
 
