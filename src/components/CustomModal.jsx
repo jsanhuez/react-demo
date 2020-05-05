@@ -5,6 +5,7 @@ Modal.setAppElement('#root')
 
 function CustomModal() {
     const [modalIsOpen, setModalIsOpen] = useState(false)
+
     return (
         <div>
             <button onClick={() => setModalIsOpen(true)}>Open modal</button>
