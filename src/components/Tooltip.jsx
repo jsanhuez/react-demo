@@ -22,7 +22,7 @@ function Tooltip() {
                 <Tippy
                     placement='left'
                     arrow={false}
-                    delay={1000} 
+                    delay={1000}
                     content='Basic Tooltip'
                 >
                     <button>Hover</button>
