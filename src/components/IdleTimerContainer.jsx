@@ -38,7 +38,6 @@ function IdleTimerContainer() {
                 isOpen={modalIsOpen}
                 shouldCloseOnOverlayClick={false}
                 shouldCloseOnEsc={false}
-                // onRequestClose={() => setModalIsOpen(false)}
                 style={
                     {
                         overlay: {
