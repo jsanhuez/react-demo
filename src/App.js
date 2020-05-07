@@ -5,6 +5,7 @@ import { MdAlarm } from "react-icons/md";
 import './App.css';
 import CustomModal from './components/CustomModal';
 import ToastNotification from './components/ToastNotification';
+import Tooltip from './components/Tooltip';
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
       <ToastNotification />
 
       <CustomModal />
+
+      <Tooltip />
     </div>
   );
 }
