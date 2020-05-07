@@ -1,7 +1,7 @@
 import React from 'react'
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import CustomToast from './CustomToast';
+import { toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+import CustomToast from './CustomToast'
 
 const notify = () => {
     toast("Default notification!", { position: toast.POSITION.TOP_LEFT })
@@ -25,7 +25,7 @@ toast.configure()
 function ToastNotification() {
     return (
         <div>
-            <button onClick={ notify }>Notify !</button>
+            <button onClick={notify}>Notify !</button>
         </div>
     )
 }
