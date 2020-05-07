@@ -10,8 +10,8 @@ function CustomModal() {
         <div>
             <button onClick={() => setModalIsOpen(true)}>Open modal</button>
             <Modal
-                isOpen={ modalIsOpen }
-                shouldCloseOnOverlayClick={ false }
+                isOpen={modalIsOpen}
+                shouldCloseOnOverlayClick={false}
                 onRequestClose={() => setModalIsOpen(false)}
                 style={
                     {
