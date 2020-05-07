@@ -6,6 +6,7 @@ import './App.css';
 import CustomModal from './components/CustomModal';
 import ToastNotification from './components/ToastNotification';
 import Tooltip from './components/Tooltip';
+import CustomCountUp from './components/CustomCountUp';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
       <CustomModal />
 
       <Tooltip />
+
+      <CustomCountUp />
     </div>
   );
 }
