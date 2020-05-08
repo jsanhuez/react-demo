@@ -1,6 +1,12 @@
 import React, { useState } from 'react'
 import { ChromePicker } from 'react-color'
 
+const colorPicker = { 
+    position: 'relative',
+    left: '50%',
+    marginLeft: '-112px' 
+}
+
 function ColorPicker() {
     const [color, setColor] = useState('#fff')
     const [showColorPicker, setShowColorPicker] = useState(false)
@@ -14,11 +20,7 @@ function ColorPicker() {
             </button>
             {
                 showColorPicker && (
-                <div style={{ 
-                    position: 'relative',
-                    left: '50%',
-                    marginLeft: '-112px' 
-                }}>
+                <div style={colorPicker}>
                     <ChromePicker
                         color={color}
                         onChange={(updatedColor) => setColor(updatedColor.hex)}
