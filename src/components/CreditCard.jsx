@@ -17,6 +17,8 @@ function CreditCard() {
                 expiry={expiry}
                 cvc={cvc}
                 focused={focus}
+                locale={{ valid: 'Válido hasta' }}
+                placeholders={{ name: 'TU NOMBRE AQUÍ' }}
             />
             <form>
                 <input
