@@ -9,6 +9,7 @@ import Tooltip from './components/Tooltip';
 import CustomCountUp from './components/CustomCountUp';
 import IdleTimerContainer from './components/IdleTimerContainer';
 import ColorPicker from './components/ColorPicker';
+import CreditCard from './components/CreditCard';
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
       <Tooltip />
 
       <CustomCountUp />
+
+      <CreditCard />
 
       <ColorPicker />
     </div>
