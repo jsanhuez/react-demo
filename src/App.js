@@ -12,10 +12,12 @@ import ColorPicker from './components/ColorPicker';
 import CreditCard from './components/CreditCard';
 import DatePickerComponent from './components/DatePickerComponent';
 import PlayerComponent from './components/PlayerComponent';
+import LoadingDemo from './components/LoadingDemo';
 
 function App() {
   return (
     <div className="App">
+      <LoadingDemo />
       <IdleTimerContainer />
 
       <IconContext.Provider value={{color: 'blue', size: '5rem'}} >
