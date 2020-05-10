@@ -1,13 +1,15 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
 
+const playerStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    paddingBottom: '40px'
+}
+
 function PlayerComponent() {
     return (
-        <div style={{ 
-            display: 'flex',
-            justifyContent: 'center',
-            paddingBottom: '40px'
-        }}>
+        <div style={playerStyle}>
             <ReactPlayer
                 width='480px'
                 height='240px'
