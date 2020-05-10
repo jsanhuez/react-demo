@@ -11,6 +11,7 @@ import IdleTimerContainer from './components/IdleTimerContainer';
 import ColorPicker from './components/ColorPicker';
 import CreditCard from './components/CreditCard';
 import DatePickerComponent from './components/DatePickerComponent';
+import PlayerComponent from './components/PlayerComponent';
 
 function App() {
   return (
@@ -35,6 +36,8 @@ function App() {
       <ColorPicker />
 
       <DatePickerComponent />
+
+      <PlayerComponent />
     </div>
   );
 }
