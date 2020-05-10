@@ -10,6 +10,7 @@ import CustomCountUp from './components/CustomCountUp';
 import IdleTimerContainer from './components/IdleTimerContainer';
 import ColorPicker from './components/ColorPicker';
 import CreditCard from './components/CreditCard';
+import DatePickerComponent from './components/DatePickerComponent';
 
 function App() {
   return (
@@ -32,6 +33,8 @@ function App() {
       <CreditCard />
 
       <ColorPicker />
+
+      <DatePickerComponent />
     </div>
   );
 }
