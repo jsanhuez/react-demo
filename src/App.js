@@ -18,12 +18,13 @@ import BarChart from './components/BarChart';
 import DoughnutChart from './components/DoughnutChart';
 
 const chartCSS = {
-  display: 'flex',
-  justifyContent: 'center'
-}
-
-const chartWidth = {
-  width: '720px'
+  parentContainer: {
+    display: 'flex',
+    justifyContent: 'center'
+  },
+  childrenContainer: {
+    width: '720px'
+  }
 }
 
 function App() {
@@ -53,8 +54,8 @@ function App() {
 
       <PlayerComponent />
 
-      <div style={chartCSS}>
-        <div style={chartWidth}>
+      <div style={chartCSS.parentContainer}>
+        <div style={chartCSS.childrenContainer}>
           <LineChart />
           <BarChart />
           <DoughnutChart />
