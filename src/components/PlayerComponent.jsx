@@ -14,7 +14,7 @@ function PlayerComponent() {
                 width='480px'
                 height='240px'
                 controls
-                playing
+                // playing
                 url='https://www.youtube.com/watch?v=ysz5S6PUM-U'
                 onReady={() => console.log('onReady callback')}
                 onStart={() => console.log('onStart callback')}

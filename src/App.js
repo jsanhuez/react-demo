@@ -13,6 +13,18 @@ import CreditCard from './components/CreditCard';
 import DatePickerComponent from './components/DatePickerComponent';
 import PlayerComponent from './components/PlayerComponent';
 import LoadingDemo from './components/LoadingDemo';
+import LineChart from './components/LineChart';
+import BarChart from './components/BarChart';
+import DoughnutChart from './components/DoughnutChart';
+
+const chartCSS = {
+  display: 'flex',
+  justifyContent: 'center'
+}
+
+const chartWidth = {
+  width: '720px'
+}
 
 function App() {
   return (
@@ -40,6 +52,14 @@ function App() {
       <DatePickerComponent />
 
       <PlayerComponent />
+
+      <div style={chartCSS}>
+        <div style={chartWidth}>
+          <LineChart />
+          <BarChart />
+          <DoughnutChart />
+        </div>
+      </div>
     </div>
   );
 }
